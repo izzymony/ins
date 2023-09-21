@@ -1,0 +1,273 @@
+ 
+
+ style.css
+ *{
+ margin: 0; 
+ padding: 0;
+ }
+ body {
+ background: white;
+ height: 100vh;
+ font-family: 'DM Sans-serif Display' sans-serif;
+ }
+ nav {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+ font-size: 18px;
+ font-weight: bold;
+ font-family: sans-serif;
+ padding: 15px;
+ background: white;
+ }
+ nav a {
+ text-decoration: none;
+ color: black;
+ }
+ .list{
+     display: flex;
+     list-style: none;
+     gap: 10px;
+ }
+ 
+ 
+ #toggler, label{
+ display: none;
+ }
+ label i{
+ color: black;
+ }
+
+ main{
+   background-color:hsl(256, 26%, 20%);
+   
+    width: 100%;
+   height: 250%;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   
+ }
+
+ button{
+    height: 2.5rem;
+    width: 9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    border: none;
+ }
+ .btn{
+    height: 2.5rem;
+    width: 9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+    border: none;
+ }
+
+ h1{
+  padding-top: 28rem;
+   color: white;
+   font-size: 40px;
+   margin: 1rem;
+ }
+
+ h2{
+   font-size: 40px;
+
+ }
+ h3{
+   font-size: 30px;
+
+ }
+ h4{
+   color: white;
+   padding-top:4rem ;
+   font-size: 35px;
+   margin: 0.5rem;
+ }
+
+ h6{
+    color: lightgrey;
+    font-size: 17px;
+    
+    font-family: 'DM Sans-serif Display' sans-serif;
+ }
+
+ h5{
+    font-size: 17px;
+ }
+
+ .intro{
+   width: 100%;
+   float: left;
+ }
+
+ P{
+   font-size: 14px;
+   margin: 1rem;
+   color:lightgrey;
+   font-family: 'karla' , sans-serif;
+   font-weight: 20;
+ }
+ 
+ .right-pattern {
+   position:absolute;
+   top: 220%;
+   right: 5%;
+   width: 30%;
+   /* transform: translate(-20%, 20%); */
+ }
+
+ .left-pattern {
+   position: absolute;
+   top: 130%;
+   left: 0%;
+   margin-left: 1rem;
+   width:40%; 
+   /* width: auto; */
+ }
+
+ .btn{
+   background-color: hsl(0, 0%, 98%);
+
+   background-color: hsl(256, 26%, 20%);
+   color: hsl(0, 0%, 98%);
+   box-shadow: inset 0 0 0 0.2rem hsl(0, 0%, 98%);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .hr{
+   margin-top: 14rem;
+   width: 25%;
+   color: pink;
+   position: sticky;
+   align-content: center;
+   margin-left: 7rem;
+   justify-content: center;
+ }
+
+ .feature-img{
+   margin-top: 3rem;
+ }
+
+
+ .container{
+      width:90%;
+      height: 30%;
+      margin-top: 8rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      background-color: hsl(256, 26%, 20%);
+      background-image: url(/img/bg-pattern-how-we-work-mobile.svg);
+      background-repeat: no-repeat;
+      background-position: 6rem;
+ }
+
+ .work{
+   margin-left: 7rem;
+   width: 150px;
+   height: 250px;
+ }
+ .logo{
+   margin-top: 4rem;
+ }
+   .footer{
+       width: 100%;
+       margin-top: 4rem;
+      height: 20%;  
+      background-color:hsl(0, 0%, 98%); 
+      background-image: url(/img/bg-pattern-footer-mobile.svg);
+      background-position: fixed;  
+   }
+   .social-links {
+      display: flex;
+      gap: 2rem;
+      color: hsl(273, 4%, 51%);
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-left:3rem;
+     
+    }
+    .social-links .icons {
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    .social-links .icons:hover {
+      color: hsl(270, 9%, 17%);
+    }
+
+    hr{
+      margin-top: 1.9rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .text-head{
+      color:hsl(273, 4%, 51%);
+      margin-top: 3rem;
+    }
+
+    .footer-links a {
+      display: grid;
+      grid-template-columns: repeat(0, 1fr);
+      gap: 1rem;
+     text-decoration: none;
+     font-family: 'karla' , sans-serif;
+      margin-top: 2rem;
+      font-size: 12px;
+      color: hsl(255, 23%, 20%);
+      transition: all 0.2s ease-in-out;
+      color: hsl(270, 9%, 17%);
+    }
+   
+  /*  .footer-header-container{
+        width: 90%;
+        height: 40%;  
+        background-color:black; 
+        background-image: url(/img/bg-pattern-footer-mobile.svg); 
+   }
+  */
+
+  @media screen and (min-width:400px){
+         .left-pattern{
+            margin-top: 6rem;
+            width: 30%;
+            position:absolute;
+            z-index: 1000;
+         }
+         .right-pattern{
+            margin-top: 5rem;
+            width: 30%;
+         }
+
+         h1{
+            margin-top: 6rem;
+         }
+  }
+   
+  
+ @media screen and (max-width: 650px){
+ 
+ .menu{
+ width: 100%;
+ max-height: 0;
+ overflow: hidden;
+ }
+ label{
+ display: inline-flex;
+ }
+ #toggler:checked~.menu{
+ max-height: 100%;
+ }
+ .list{
+ flex-direction: column;
+ align-items: center;
+ padding: 20px;
+ }
+ 
+
+ }
